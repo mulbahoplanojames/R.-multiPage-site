@@ -88,7 +88,7 @@ nav{
 
 #btn{
   margin-top: 40px;
-  padding: 2em 3em;
+  padding: 1.5em 2.5em;
   background: transparent;
   border-radius: 10px;
   border: 3px solid #87cafe;
@@ -116,6 +116,9 @@ nav .fa{
 @media(max-width:700px){
   #text-box h1{
     font-size: 30px;
+  }
+  #text-box p{
+    font-size: 16px;
   }
   .nav-links ul li{
     display: block;
@@ -305,7 +308,7 @@ nav .fa{
 .contact-us-box1{
   /* background: #87cafe; */
   border: 2px solid black;
-  width: 350px;
+  width: 320px;
   height: 350px;
   padding-top: 3%;
   cursor: pointer;
