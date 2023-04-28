@@ -1,0 +1,411 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#header{
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0.6),  rgba(0,0,0,0.6)), url(img/background2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 6%;
+  text-align: center;
+}
+
+#logo{
+  width:6%;
+  height: fit-content;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: end;
+}
+
+.nav-links ul li{
+  display: inline-block;
+  padding: 10px 30px;
+  list-style-type: none;
+  position: relative;
+}
+
+#nav-links ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: serif;
+  font-weight: 900px;
+  text-transform: capitalize;
+}
+
+#nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #87cafe;
+  display: block;
+  margin: auto;
+  position: relative;
+  transition: 0.5s ease-in;
+}
+
+#nav-links ul li:hover::after{
+  width: 100%;
+}
+
+#text-box{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+#text-box h1{
+  font-size: 60px;
+  font-family: 'Trebuchet MS';
+  font-weight: 800PX;
+  text-transform: capitalize;
+}
+
+#text-box p{
+  font-size: 20px;
+  font-family: 'Trebuchet MS';
+  font-weight: 800PX;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
+
+#btn{
+  margin-top: 40px;
+  padding: 2em 3em;
+  background: transparent;
+  border-radius: 10px;
+  border: 3px solid #87cafe;
+  box-shadow: 0px 5px 10px 0px #87cafe;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+#btn:hover{
+  box-shadow: 0px 10px 12px 6px #87cafe;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+nav .fa{
+  display: none;
+}
+
+@media(max-width:700px){
+  #text-box h1{
+    font-size: 30px;
+  }
+  .nav-links ul li{
+    display: block;
+  }
+  .nav-links{
+    position: absolute;
+    background: #87cafe;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: start;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .nav-links ul{
+    padding: 30px;
+  }
+}
+
+/* This is the section for Courses */
+/* This is the section for Courses */
+/* This is the section for Courses */
+
+#courses{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5%;
+}
+
+#courses h1{
+  font-size: 50px;
+  font-family: 'Trebuchet MS';
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+#courses #pp{
+  padding-top: 10px;
+  font-family: 'Trebuchet MS';
+  font-weight: 800;
+}
+
+#course-container{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-box{
+  background: #87cafe;
+  flex-basis: 31%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  transition: 0.5s;
+}
+
+.course-box:hover{
+  box-shadow: 0px 5px 5px 0px black;
+}
+
+.course-box h3{
+  padding: 10px 0px;
+  font-size: 20px;
+}
+
+@media(max-width:700px){
+  #course-container{
+    flex-direction: column;
+  }
+}
+
+/* this is for the About  */
+
+#about-us{
+  width:  80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#about-us h1{
+  font-size: 50px;
+  font-family: 'Trebuchet MS';
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+#about-us p{
+  padding-top: 20px;
+}
+
+#facilities{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5%;
+}
+
+#facilities h1{
+  font-size: 50px;
+  font-family: 'Trebuchet MS';
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+#facilities p{
+  padding-top: 10px;
+  font-family: 'Trebuchet MS';
+  font-weight: 800;
+}
+
+#facilities-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+ 
+.facilities-box{
+  flex-basis: 31;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+
+.facilities-box img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facilities-box p{
+  padding: 0px;
+}
+
+.facilities-box h3{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-family: 'Trebuchet MS';
+}
+
+@media(max-width:700px){
+  #facilities-container{
+    flex-direction: column;
+  }
+}
+
+
+/* this is for the Contact-us page */
+/* this is for the Contact-us page */
+
+#contact-us{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5%;
+}
+
+#contact-us h1{
+  font-size: 50px;
+  font-family: 'Trebuchet MS';
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+#contact-us-container{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 5%;
+  margin-bottom: 5%;
+}
+
+.contact-us-box1{
+  /* background: #87cafe; */
+  border: 2px solid black;
+  width: 350px;
+  height: 350px;
+  padding-top: 3%;
+  cursor: pointer;
+}
+
+.contact-us-box1:hover{
+  box-shadow: 0px 2px 5px 2px #87cafe;
+}
+
+.contact-us-box1 p{
+  font-size: 25px;
+}
+
+.contact-us-box2{
+   /* background: #87cafe; */
+  width: 320px;
+  height: 420px;
+  padding-top: 3%;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: 0.3s ;
+  margin-top: 40px ;
+}
+.contact-us-box2:hover{
+  box-shadow: 0px 2px 5px 2px #87cafe;
+}
+
+
+.label{
+  font-size: 20px;
+  font-family: 'Trebuchet MS';
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.inputs{
+  width: 12em;
+  height: 2.5em;
+  border-radius: 10px;
+  border: 2px solid #87cafe;
+  outline: none;
+  box-shadow: 0px 2px 5px 2px #87cafe;
+  padding-left: 10px;
+  color: rgb(189, 186, 186);
+  font-size: 15px;
+}
+
+textarea{
+  outline: none;
+  font-size: 15px;
+  box-shadow: 0px 2px 5px 2px #87cafe;
+}
+
+
+span{
+  font-size: 23px;
+}
+
+#submit{
+  padding: 8px 15px;
+  font-size: 15px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+@media(max-width:700px){
+  #contact-us-container{
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
+
+/* This is for the footer */
+/* This is for the footer */
+
+#footer{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 3%;
+  margin-bottom: 3%;
+}
+
+#footer p{
+  padding-bottom: 15px;
+  font-family: 'Trebuchet MS';
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+#footer #icons{
+  font-size: 35px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+.fa:hover{
+  color: #87cafe;
+}
+
+#link{
+  color: black;
+}
