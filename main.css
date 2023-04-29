@@ -222,66 +222,8 @@ nav .fa{
   padding-top: 20px;
 }
   
-/* This sectio is for the administration page */
-/* This sectio is for the administration page */
-
-#administration{
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 10%;
-}
-
-#administration h1{
-  font-size: 50px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  text-transform: capitalize;
-}
-
-#administration p{
-  padding-top: 5px;
-  font-family: 'Roboto', sans-serif;
-  padding-bottom: 4%;
-}
-
-#administration-container{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 3%;
-}
-
-.administration-box{
-  background: #008000;
-  flex-basis: 31%;
-  border-radius: 10px;
-  padding: 10px 15px;
-  box-sizing: border-box;
-  margin-top: 3%;
-}
-
-.administration-box:hover{
-  box-shadow: 0px 5px 5px 2px;
-}
-
-.card{
-  background: white;
-  width: 90px;
-  height: 60px;
-  margin-left: 110px;
-  margin-top: 10px;
-  border-radius: 50px;
-}
-
-@media(max-width:700px){
-  #administration-container{
-    flex-direction: column;
-  }
-}
-
 /* this section is for the facilities page */
-/* this section is for the facilities page */
+
 #facilities{
   width: 80%;
   margin: auto;
