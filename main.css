@@ -125,7 +125,7 @@ nav .fa{
   }
   .nav-links{
     position: absolute;
-    background: #87cafe;
+    background: #008000;
     height: 100vh;
     width: 200px;
     top: 0;
@@ -325,7 +325,7 @@ nav .fa{
 .contact-us-box2{
    /* background: #87cafe; */
   width: 320px;
-  height: 420px;
+  height: 425px;
   padding-top: 3%;
   border: 2px solid black;
   cursor: pointer;
@@ -348,9 +348,9 @@ nav .fa{
   width: 12em;
   height: 2.5em;
   border-radius: 10px;
-  border: 2px solid #87cafe;
+  border: 2px solid #008000;
   outline: none;
-  box-shadow: 0px 2px 5px 2px #87cafe;
+  box-shadow: 0px 2px 5px 2px #008000;
   padding-left: 10px;
   color: rgb(189, 186, 186);
   font-size: 15px;
