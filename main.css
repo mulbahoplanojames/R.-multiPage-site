@@ -249,6 +249,7 @@ nav .fa{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 3%;
 }
 
 .administration-box{
